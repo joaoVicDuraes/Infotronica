@@ -3,9 +3,10 @@ header {
     display: flex;
     justify-content: center;
     position: fixed;
+    padding: 1%;
     top: 0;
     width: 100%;
-    z-index: 2;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    z-index: 2;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 }
 
 .logoDireita {
@@ -15,6 +16,8 @@ header {
 
 .conteudoPrincipal {
     text-align: center;
+    width: 100%;
+    padding-top: 10%;
 }
 
 .tituloHero {
@@ -37,6 +40,7 @@ ul {
 li {
     font-size: 80%;
     font-weight: 600;
+    cursor:pointer;
     transition: 0.3s ease;
 }
 

@@ -5,6 +5,8 @@ import Computadores from './sections/Computadores/Computadores.jsx'
 import Perifericos  from './sections/Perifericos/Perifericos.jsx'
 import SobreNos from './sections/SobreNos/SobreNos.jsx'
 import Manutencao from './sections/Manutencao/Manutencao.jsx'
+import Footer from './components/layout/Footer/Footer.jsx'
+import Faq from './sections/Faq/Faq.jsx'
 function App() {
 
   return (
@@ -15,6 +17,9 @@ function App() {
       <Perifericos/>
       <SobreNos/>
       <Manutencao/>
+      <Faq/>
+      <Footer />
+
     </>
   )
 }

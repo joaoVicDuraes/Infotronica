@@ -1,6 +1,6 @@
 .prodservicos {
     text-align: center;
-    margin: 7rem;
+    margin: 9rem;
 }
 
 .tituloSecao {
@@ -10,7 +10,7 @@
 
 .containerCards {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .cardProduto {
@@ -20,6 +20,8 @@
 
 h3 {
     background-color: purple;
+    margin: 0;
+    margin-bottom: 5%;
 }
 
 a {
@@ -29,6 +31,6 @@ a {
 }
 
 .imgcard {
-    width: 65%;
+    width: 85%;
     background-color: purple;
 }
