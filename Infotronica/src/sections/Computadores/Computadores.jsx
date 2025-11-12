@@ -1,13 +1,11 @@
 import styles from "./Computadores.module.css"
-import computador from '../../../public/imagemComputador.jpeg'
+import computador from '../../../public/nootebook moderno.jpg'
+import SectionTitle from "../../components/common/SectionTitle/SectionTitle"
 export default function Computadores() {
     return (
         <>
-            <section id="secao-computadores-nav" className={`${styles.secaoPagina} ${styles.secaoComputadores}`}>
-      <div className={styles.barraTituloSecao}>
-        <h2 className={styles.tituloSecao}>COMPUTADORES</h2>
-      </div>
-
+      <section id="computadores" className={`${styles.secaoPagina} ${styles.secaoComputadores}`}>
+      <SectionTitle titulo="COMPUTADORES" />
       <div className={styles.wrapperConteudoComputadores}>
         <div className={styles.containerImagem}>
           <img src={computador} alt="Notebook moderno numa mesa" />

@@ -8,18 +8,20 @@ export default function Header() {
         
         <div className='cabecalho'>
             <header> 
-                <ul>
-                    <a href='#inicio'>
-                    <li>INÍCIO</li>
-                    </a>
-                    <a href='#servicos'>
-                    <li>SERVIÇOS</li>
-                    </a>
+                <ul className='header'>
+                    <Button texto="INICIO" href="#inicio"/>
+                    <Button texto="SERVIÇOS" href="#servicos"/>
+                    <Button texto="COMPUTADORES" href="#computadores"/>
                 </ul>
                 <img src={Logo} alt="Logo da Infotrônica" className={style.logoDireita} />
                 <ul>
-                    <li>INÍCIO</li>
-                    <li>SERVIÇOS</li>
+                    <Button texto="PERIFÉRICOS" href="#perifericos"/>
+                    <a href='#contato'>
+                    <Button texto="CONTATO" />
+                    </a>
+                    <a href='https://wa.me/5511971440699' target="_blank" rel="noopener noreferrer">
+                    <Button texto="ORÇAMENTO" />
+                    </a>
                 </ul>
             </header>
         </div>
@@ -27,7 +29,6 @@ export default function Header() {
                 <h1 className={style.tituloHero}>INFOTRÔNICA</h1>
                 <p className={style.subtituloHero} id='servicos'>INOVAÇÃO & TECNOLOGIA DESDE 1997</p>
             </div>
-            
         </>
     ) 
 }

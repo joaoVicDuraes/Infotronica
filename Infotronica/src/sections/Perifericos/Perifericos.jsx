@@ -1,24 +1,40 @@
+import SectionTitle from '../../components/common/SectionTitle/SectionTitle';
+import styles from './Perifericos.module.css';
+import mouseImage from '../../../public/mouse.webp';
+import tecladoImage from '../../../public/teclado3.jpg';
+import headsetImage from '../../../public/headset.webp';
+
 export default function Perifericos(){
     return(
         <>
-        <section id="secao-perifericos-nav" class="secao-pagina secao-perifericos">
-            <div class="barra-titulo-secao">
-                <h2 class="titulo-secao">PERIFÉRICOS</h2>
-                <div class="logo-i-titulo">I</div>
-            </div>
-                <div class="wrapper-conteudo-perifericos">
-                    <div class="item-periferico">
-                        <img src="./img/setup worker.jpeg" alt="Setup de trabalho com computador e periféricos"/>
-                            <h4>PRODUTIVIDADE</h4>
-                        <p>Mouses, teclados ergonômicos, monitores e acessórios que otimizam seu ambiente de trabalho para máxima eficiência e conforto.</p>
-                    </div>
-                    <div class="item-periferico">
-                        <img src="./img/setup gamer.webp" alt="Setup gamer com teclado iluminado, rato e headset"/>
-                            <h4>IMERSÃO GAMER</h4>
-                        <p>Equipamentos de alta performance como headsets com áudio 7.1, teclados mecânicos e mouses com alta precisão para dominar seus jogos.</p>
-                    </div>
+        <section id="perifericos" className={styles.secaoPagina}>
+            <SectionTitle titulo="PERIFÉRICOS" />
+            <div className={styles.wrapperConteudoPerifericos}>
+              <div className={styles.itemPeriferico}>
+                <div className={styles.itemTexto}>
+                    <h4>TECLADOS</h4>
+                    <img src={tecladoImage} alt="Imagem de um teclado" className={styles.imgPerifericos} />
+                    <p>
+                        Teclados ergonômicos e mecânicos para máxima produtividade e conforto. Escolha entre uma variedade de estilos e funcionalidades para atender às suas necessidades diárias.
+                    </p>
                 </div>
-            </section>
+                <div className={styles.itemTexto}>
+                    <h4>MOUSES</h4>
+                    <img src={mouseImage} alt="Imagem de um mouse" className={styles.imgPerifericos} /> 
+                    <p>
+                        Mouses precisos e responsivos para todas as tarefas, desde o trabalho até jogos. Descubra modelos com designs ergonômicos e recursos avançados para melhorar sua experiência.
+                    </p>
+                </div>
+                <div className={styles.itemTexto}>
+                    <h4>HEADSETS</h4>
+                    <img src={headsetImage} alt="Imagem de um headset" className={styles.imgPerifericos} />
+                    <p>
+                        Headsets com som cristalino e microfones de alta qualidade para comunicação clara. Perfeitos para reuniões online, jogos e entretenimento, proporcionando conforto durante longas sessões.
+                    </p>
+                </div>
+              </div>
+            </div>
+        </section>
         </>
     )
 }
