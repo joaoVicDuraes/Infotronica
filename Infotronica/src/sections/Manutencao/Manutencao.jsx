@@ -1,4 +1,5 @@
 import styles from './Manutencao.module.css';
+import reparo from '../../../public/reparo-de-computadores.png';
 
 export default function Manutencao() {
   return (
@@ -32,7 +33,7 @@ export default function Manutencao() {
 
         <div className={styles.itemServico}>
           <img
-            src="./img/reparos pc.jpg"
+            src={reparo}
             alt="Mãos a reparar componentes eletrônicos de um computador"
           />
           <h4>REPAROS TÉCNICOS</h4>
