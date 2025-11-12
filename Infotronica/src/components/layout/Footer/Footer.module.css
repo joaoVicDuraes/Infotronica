@@ -1,0 +1,121 @@
+:root {
+  --roxo-principal: #7a00ff;
+  --amarelo-secundario: #ffcc00;
+  --texto-principal: #ffffff;
+  --fundo-escuro: #0a0018;
+}
+
+/* ======== Estrutura geral ======== */
+.secaoPagina {
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background: linear-gradient(180deg, var(--fundo-escuro), #1b0040);
+  color: var(--texto-principal);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ======== Ícone decorativo ======== */
+.logoISuperiorEsquerdo {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--amarelo-secundario);
+  opacity: 0.08;
+  user-select: none;
+}
+
+/* ======== Título principal ======== */
+.tituloPrincipalRodape {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--amarelo-secundario);
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px rgba(255, 204, 0, 0.4);
+}
+
+/* ======== Subtítulo ======== */
+.subtituloRodape {
+  font-size: 1.1rem;
+  color: var(--texto-principal);
+  opacity: 0.8;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* ======== Contatos ======== */
+.contatos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.itemContato h5 {
+  color: var(--amarelo-secundario);
+  margin-bottom: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.itemContato p a {
+  color: var(--texto-principal);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.itemContato p a:hover {
+  color: var(--amarelo-secundario);
+}
+
+/* ======== Ícones sociais ======== */
+.iconesSociais {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.iconeSocial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.iconeSocial:hover {
+  background-color: var(--amarelo-secundario);
+  transform: translateY(-3px);
+}
+
+.svgIcon {
+  fill: var(--texto-principal);
+  width: 22px;
+  height: 22px;
+  transition: fill 0.3s ease;
+}
+
+.iconeSocial:hover .svgIcon {
+  fill: var(--roxo-principal);
+}
+
+/* ======== Responsividade ======== */
+@media (max-width: 768px) {
+  .tituloPrincipalRodape {
+    font-size: 1.8rem;
+  }
+
+  .contatos {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

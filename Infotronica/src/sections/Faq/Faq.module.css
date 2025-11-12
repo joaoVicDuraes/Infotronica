@@ -1,0 +1,109 @@
+:root {
+  --cinza-fundo: #121212;
+  --roxo-principal: #7a00ff;
+  --amarelo-secundario: #ffcc00;
+  --texto-principal: #ffffff;
+}
+
+/* ===== Estrutura principal ===== */
+.secaoPagina {
+  background-color: var(--cinza-fundo);
+  color: var(--texto-principal);
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tituloSecao {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--amarelo-secundario);
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+/* ===== Conteúdo principal ===== */
+.wrapperConteudoFaq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.itemFaq {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--roxo-principal);
+  border-radius: 15px;
+  width: 300px;
+  padding: 30px 25px;
+  box-shadow: 0 0 20px rgba(122, 0, 255, 0.25);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.itemFaq:hover {
+  transform: translateY(-8px);
+  border-color: var(--amarelo-secundario);
+  box-shadow: 0 0 35px rgba(255, 204, 0, 0.3);
+}
+
+/* ===== Ícones ===== */
+.iconeFaq {
+  width: 32px;
+  height: 32px;
+  color: var(--roxo-principal);
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.itemFaq:hover .iconeFaq {
+  color: var(--amarelo-secundario);
+}
+
+/* ===== Textos ===== */
+.itemFaq h4 {
+  color: var(--amarelo-secundario);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
+}
+
+.itemFaq p {
+  font-size: 1rem;
+  color: var(--texto-principal);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ===== Logo decorativa ===== */
+.logoIInferiorEsquerdo {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--roxo-principal);
+  opacity: 0.08;
+  user-select: none;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .wrapperConteudoFaq {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itemFaq {
+    width: 90%;
+  }
+
+  .tituloSecao {
+    font-size: 2rem;
+  }
+}
