@@ -1,5 +1,5 @@
 import styles from './SobreNos.module.css';
-import img from '../../../public/nootebook moderno.jpg';
+import img from '../../assets/nootebook moderno.jpg';
 
 export default function SobreNos() {
   return (

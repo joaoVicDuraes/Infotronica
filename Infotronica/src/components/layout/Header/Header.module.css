@@ -18,8 +18,9 @@ header {
     text-align: center;
     width: 100%;
     padding-top: 10%;
-    background-image: url('../../../public/fundo3.jpg');
+    background-image: url('../../../assets/fundo3.jpg');
     padding-bottom: 7vh;
+    margin: 0;
 }
 
 .tituloHero {

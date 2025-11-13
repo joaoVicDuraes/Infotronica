@@ -1,4 +1,4 @@
-import Logo from '../../../../public/logo2certo.png'
+import Logo from '../../../assets/logo2certo.png'
 import style from './Header.module.css'
 import Button from '../../common/Button/Button'
 

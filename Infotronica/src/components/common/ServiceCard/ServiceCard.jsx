@@ -1,8 +1,8 @@
 import Button from "../Button/Button"
 import style from './ServiceCard.module.css'
-import computadores from '../../../../public/computadores.png'
-import reparos from '../../../../public/reparos.png'
-import perifericos from '../../../../public/perifericos.png'
+import computadores from '../../../assets/computadores.png'
+import reparos from '../../../assets/reparos.png'
+import perifericos from '../../../assets/perifericos.png'
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 export default function ServiceCard() {

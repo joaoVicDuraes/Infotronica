@@ -1,8 +1,8 @@
 import SectionTitle from '../../components/common/SectionTitle/SectionTitle';
 import styles from './Perifericos.module.css';
-import mouseImage from '../../../public/mouse.webp';
-import tecladoImage from '../../../public/teclado3.jpg';
-import headsetImage from '../../../public/headset.webp';
+import mouseImage from '../../assets/mouse.webp';
+import tecladoImage from '../../assets/teclado3.jpg';
+import headsetImage from '../../assets/headset.webp';
 
 export default function Perifericos(){
     return(

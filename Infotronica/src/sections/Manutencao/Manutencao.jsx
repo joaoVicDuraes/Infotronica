@@ -1,6 +1,7 @@
 import styles from './Manutencao.module.css';
-import reparo from '../../../public/reparo-de-computadores.png';
-
+import reparo from '../../assets/reparo-de-computadores.png';
+import upgrade from '../../assets/upgrade.jpg';
+import limpeza from '../../assets/limpeza-dos-computadores.jpg';
 export default function Manutencao() {
   return (
     <section id="secao-servicos-nav" className={`${styles.secaoPagina} ${styles.secaoServicos}`}>
@@ -9,7 +10,7 @@ export default function Manutencao() {
       <div className={styles.wrapperConteudoServicos}>
         <div className={styles.itemServico}>
           <img
-            src="./img/upgrade de hardware.jpg"
+            src={upgrade}
             alt="Mão a fazer upgrade de hardware num computador"
           />
           <h4>UPGRADES</h4>
@@ -21,7 +22,7 @@ export default function Manutencao() {
 
         <div className={styles.itemServico}>
           <img
-            src="./img/limpeza pc1.jpg"
+            src={limpeza}
             alt="Pincel a limpar o interior de um computador"
           />
           <h4>LIMPEZA PROFUNDA</h4>
