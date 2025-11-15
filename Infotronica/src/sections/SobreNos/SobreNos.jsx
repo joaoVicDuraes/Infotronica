@@ -1,14 +1,13 @@
 import styles from './SobreNos.module.css';
-import img from '../../assets/nootebook moderno.jpg';
+import img from '../../assets/logotipo.png';
+import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 
 export default function SobreNos() {
   return (
     <section id="secao-sobre-nos-nav" className={`${styles.secaoPagina} ${styles.secaoSobreNos}`}>
-      <div className={styles.logoISuperiorDireito}>I</div>
-
       <div className={styles.wrapperConteudoSobreNos}>
         <div className={styles.conteudoTexto}>
-          <h2 className={styles.tituloSecao}>SOBRE NÓS</h2>
+          <SectionTitle titulo="SOBRE NÓS"/>
           <p>
             Na Infotrônica, acreditamos que a tecnologia deve simplificar a vida. Desde 1997, entregamos soluções
             inovadoras para você, seu negócio e sua equipe.

@@ -5,9 +5,10 @@
   }
   
   .tituloSecao {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #ffcc00;
-    letter-spacing: 2px;
+    color: var(--amarelo-secundario);
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
     background-color: transparent;
   }

@@ -1,13 +1,10 @@
 import styles from './Footer.module.css';
+import SectionTitle from '../../../components/common/SectionTitle/SectionTitle.jsx'
 
 export default function Footer() {
   return (
-    <footer className={`${styles.secaoPagina} ${styles.secaoCtaRodape}`}>
-      <div className={styles.logoISuperiorEsquerdo}>I</div>
-
-      <h2 className={styles.tituloPrincipalRodape}>
-        ENFRENTE O FUTURO. FAÇA SEU UPGRADE HOJE!
-      </h2>
+    <footer className={`${styles.secaoPagina} ${styles.secaoCtaRodape}`} id='footer'>
+      <SectionTitle titulo="ENFRENTE O FUTURO. FAÇA SEU UPGRADE HOJE!" />
       <p className={styles.subtituloRodape}>TECNOLOGIA QUE IMPULSIONA</p>
 
       <div className={styles.contatos}>

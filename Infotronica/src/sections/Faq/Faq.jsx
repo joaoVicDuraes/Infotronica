@@ -1,11 +1,10 @@
 import styles from './Faq.module.css';
+import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 
 export default function Faq() {
   return (
     <section id="secao-faq-nav" className={`${styles.secaoPagina} ${styles.secaoFaq}`}>
-      <div className={styles.barraTituloSecao}>
-        <h2 className={styles.tituloSecao}>PERGUNTAS FREQUENTES</h2>
-      </div>
+        <SectionTitle titulo="PERGUNTAS FREQUENTES" />
 
       <div className={styles.wrapperConteudoFaq}>
         <div className={styles.itemFaq}>
@@ -33,7 +32,6 @@ export default function Faq() {
         </div>
       </div>
 
-      <div className={styles.logoIInferiorEsquerdo}>I</div>
     </section>
   );
 }

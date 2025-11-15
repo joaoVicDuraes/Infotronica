@@ -11,20 +11,9 @@
   padding: 80px 20px;
   box-sizing: border-box;
   position: relative;
-  background-color: var(--cinza-fundo);
   color: var(--texto-principal);
   text-align: center;
   overflow: hidden;
-}
-
-/* ======== Título ======== */
-.tituloSecaoSimples {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--amarelo-secundario);
-  margin-bottom: 60px;
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
-  letter-spacing: 1px;
 }
 
 /* ======== Grid de serviços ======== */
@@ -36,6 +25,7 @@
   max-width: 1100px;
   margin: 0 auto;
   z-index: 1;
+  background-color: transparent;
 }
 
 /* ======== Cards de serviço ======== */
@@ -77,6 +67,7 @@
   color: var(--amarelo-secundario);
   margin-bottom: 15px;
   text-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
+  background-color: transparent;
 }
 
 .itemServico p {
@@ -84,19 +75,9 @@
   color: var(--texto-principal);
   line-height: 1.6;
   opacity: 0.9;
+  background-color: transparent;
 }
 
-/* ======== Logo decorativa ======== */
-.logoIInferiorEsquerdo {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  font-size: 6rem;
-  font-weight: 900;
-  color: var(--roxo-principal);
-  opacity: 0.08;
-  user-select: none;
-}
 
 /* ======== Responsividade ======== */
 @media (max-width: 768px) {

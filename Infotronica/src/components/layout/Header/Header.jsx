@@ -1,6 +1,7 @@
 import Logo from '../../../assets/logo2certo.png'
 import style from './Header.module.css'
 import Button from '../../common/Button/Button'
+import SectionTitle from '../../common/SectionTitle/SectionTitle'
 
 export default function Header() {
     return(
@@ -16,9 +17,7 @@ export default function Header() {
                 <img src={Logo} alt="Logo da Infotrônica" className={style.logoDireita} />
                 <ul>
                     <Button texto="PERIFÉRICOS" href="#perifericos"/>
-                    <a href='#contato'>
-                    <Button texto="CONTATO" />
-                    </a>
+                    <Button texto="CONTATO" href="#footer"/>
                     <a href='https://wa.me/5511971440699' target="_blank" rel="noopener noreferrer">
                     <Button texto="ORÇAMENTO" />
                     </a>
@@ -26,7 +25,7 @@ export default function Header() {
             </header>
         </div>
             <div className={style.conteudoPrincipal} id='inicio'>
-                <h1 className={style.tituloHero}>INFOTRÔNICA</h1>
+                <SectionTitle titulo="INFOTRÔNICA" />
                 <p className={style.subtituloHero} id='servicos'>INOVAÇÃO & TECNOLOGIA DESDE 1997</p>
             </div>
         </>

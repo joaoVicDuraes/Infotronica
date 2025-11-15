@@ -13,16 +13,9 @@
   position: relative;
   text-align: center;
   overflow: hidden;
+  margin: 0 auto;
 }
 
-.tituloSecao {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--amarelo-secundario);
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-  margin-bottom: 60px;
-  letter-spacing: 1px;
-}
 
 /* ===== Conteúdo principal ===== */
 .wrapperConteudoFaq {
@@ -58,6 +51,7 @@
   color: var(--roxo-principal);
   margin-bottom: 15px;
   transition: color 0.3s ease;
+  background-color: transparent;
 }
 
 .itemFaq:hover .iconeFaq {
@@ -71,6 +65,7 @@
   font-weight: 700;
   margin-bottom: 10px;
   text-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
+  background-color: transparent;
 }
 
 .itemFaq p {
@@ -78,19 +73,9 @@
   color: var(--texto-principal);
   opacity: 0.9;
   line-height: 1.6;
+  background-color: transparent;
 }
 
-/* ===== Logo decorativa ===== */
-.logoIInferiorEsquerdo {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  font-size: 6rem;
-  font-weight: 900;
-  color: var(--roxo-principal);
-  opacity: 0.08;
-  user-select: none;
-}
 
 /* ===== Responsividade ===== */
 @media (max-width: 768px) {

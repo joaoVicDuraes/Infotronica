@@ -13,23 +13,13 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .secaoSobreNos {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.logoISuperiorDireito {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  font-size: 6rem;
-  font-weight: bold;
-  color: var(--amarelo-secundario);
-  opacity: 0.08;
-  user-select: none;
 }
 
 .wrapperConteudoSobreNos {
@@ -50,13 +40,6 @@
   text-align: left;
 }
 
-.tituloSecao {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--amarelo-secundario);
-  margin-bottom: 25px;
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
-}
 
 .conteudoTexto p {
   font-size: 1.1rem;
@@ -75,7 +58,7 @@
 
 .containerImagem img {
   width: 100%;
-  max-width: 450px;
+  max-width: 350px;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(122, 0, 255, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -94,10 +77,6 @@
 
   .conteudoTexto {
     flex: 1 1 100%;
-  }
-
-  .tituloSecao {
-    font-size: 2rem;
   }
 
   .containerImagem img {

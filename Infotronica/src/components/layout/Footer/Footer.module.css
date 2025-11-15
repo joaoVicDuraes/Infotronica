@@ -17,26 +17,6 @@
   overflow: hidden;
 }
 
-/* ======== Ícone decorativo ======== */
-.logoISuperiorEsquerdo {
-  position: absolute;
-  top: 15px;
-  left: 25px;
-  font-size: 6rem;
-  font-weight: 900;
-  color: var(--amarelo-secundario);
-  opacity: 0.08;
-  user-select: none;
-}
-
-/* ======== Título principal ======== */
-.tituloPrincipalRodape {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--amarelo-secundario);
-  margin-bottom: 10px;
-  text-shadow: 0 0 12px rgba(255, 204, 0, 0.4);
-}
 
 /* ======== Subtítulo ======== */
 .subtituloRodape {
@@ -45,6 +25,7 @@
   opacity: 0.8;
   margin-bottom: 40px;
   letter-spacing: 1px;
+  background-color: transparent;
 }
 
 /* ======== Contatos ======== */
@@ -55,6 +36,7 @@
   gap: 60px;
   max-width: 900px;
   margin: 0 auto;
+  border-radius: 30px;
 }
 
 .itemContato h5 {

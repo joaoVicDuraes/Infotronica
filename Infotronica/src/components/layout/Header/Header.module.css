@@ -23,14 +23,9 @@ header {
     margin: 0;
 }
 
-.tituloHero {
-    font-weight: 800;
-    font-size: 160%;
-    background: none;
-}
 
 .subtituloHero {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 90%;
     background: none;
 }

@@ -2,10 +2,11 @@ import styles from './Manutencao.module.css';
 import reparo from '../../assets/reparo-de-computadores.png';
 import upgrade from '../../assets/upgrade.jpg';
 import limpeza from '../../assets/limpeza-dos-computadores.jpg';
+import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 export default function Manutencao() {
   return (
     <section id="secao-servicos-nav" className={`${styles.secaoPagina} ${styles.secaoServicos}`}>
-      <h2 className={styles.tituloSecaoSimples}>MANUTENÇÃO & SUPORTE</h2>
+      <SectionTitle titulo="MANUTENÇÃO DE COMPUTADORES" />
 
       <div className={styles.wrapperConteudoServicos}>
         <div className={styles.itemServico}>
@@ -44,8 +45,6 @@ export default function Manutencao() {
           </p>
         </div>
       </div>
-
-      <div className={styles.logoIInferiorEsquerdo}>I</div>
     </section>
   );
 }

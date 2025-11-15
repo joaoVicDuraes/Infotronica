@@ -1,5 +1,5 @@
 import styles from "./Computadores.module.css"
-import computador from '../../assets/computadores.png'
+import computador from '../../assets/nootebook moderno.jpg'
 import SectionTitle from "../../components/common/SectionTitle/SectionTitle"
 export default function Computadores() {
     return (
