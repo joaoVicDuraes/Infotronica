@@ -92,3 +92,75 @@
     font-size: 2rem;
   }
 }
+
+/* --- Até 600px — textos menores, imagens mais equilibradas --- */
+@media (max-width: 600px) {
+
+  .conteudoTexto {
+    gap: 18px;
+  }
+
+  .itemTexto h4 {
+    font-size: 18px;
+  }
+
+  .itemTexto p {
+    font-size: 14px;
+  }
+
+  .containerImagem img {
+    max-width: 280px;
+  }
+
+  .botaoComprar {
+    font-size: 14px;
+    padding: 12px 32px;
+  }
+}
+
+/* --- Até 480px — foco total em legibilidade --- */
+@media (max-width: 480px) {
+
+  .containerImagem img {
+    max-width: 240px;
+  }
+
+  .itemTexto h4 {
+    font-size: 17px;
+  }
+
+  .itemTexto p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .botaoComprar {
+    padding: 12px 28px;
+    letter-spacing: 1px;
+  }
+}
+
+/* --- Até 380px — telas realmente pequenas --- */
+@media (max-width: 380px) {
+
+  .conteudoTexto {
+    gap: 16px;
+  }
+
+  .containerImagem img {
+    max-width: 210px;
+  }
+
+  .itemTexto h4 {
+    font-size: 16px;
+  }
+
+  .itemTexto p {
+    font-size: 12px;
+  }
+
+  .botaoComprar {
+    font-size: 13px;
+    padding: 10px 26px;
+  }
+}

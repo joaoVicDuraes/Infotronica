@@ -1,14 +1,39 @@
-  .barraTituloSecao {
-    margin-bottom: 40px;
-    text-align: center;
-    background-color: transparent;
-  }
-  
+.barraTituloSecao {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  background-color: transparent;
+  padding: 0 1rem;
+}
+
+.tituloSecao {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--amarelo-secundario);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+  background-color: transparent;
+  line-height: 1.2;
+}
+
+
+@media (max-width: 768px) {
   .tituloSecao {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--amarelo-secundario);
-    margin-bottom: 25px;
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
-    background-color: transparent;
+    font-size: 2rem;
   }
+
+  .barraTituloSecao {
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .tituloSecao {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .barraTituloSecao {
+    margin-bottom: 1.5rem;
+  }
+}
