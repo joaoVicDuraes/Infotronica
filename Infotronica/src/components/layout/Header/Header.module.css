@@ -67,6 +67,7 @@ a {
     border-radius: 5px;
 }
 
+
 /* ============================
         MOBILE / TABLET
    vira hambúrguer a partir de 1465px
@@ -77,12 +78,13 @@ a {
     .header {
         justify-content: center;
         background-color: #000; /* fundo sólido */
-        padding: 15px 0;
+        padding: 0;
     }
 
     /* Mostra o hamburguer */
     .hamburguer {
         display: flex;
+        margin: 19px;
     }
 
     /* Esconde o menu normal */
@@ -99,7 +101,7 @@ a {
         gap: 20px;
 
         position: absolute;
-        top: 70px;
+        top: 0;
         left: 0;
 
         background-color: #000; /* FUNDO SÓLIDO */
@@ -115,6 +117,57 @@ a {
         width: 55px !important;
         position: absolute;
         right: 20px;
-        top: 12px;
+        top: 16px;
+        z-index: 26;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* Ajusta o header */
+    .header {
+        justify-content: center;
+        background-color: #000; /* fundo sólido */
+        padding: 0;
+    }
+
+    /* Mostra o hamburguer */
+    .hamburguer {
+        display: flex;
+        margin: 16px;
+    }
+
+    /* Esconde o menu normal */
+    .menuDesktop {
+        display: none !important;
+    }
+
+    /* ===== MENU MOBILE ABERTO ===== */
+    .menuMobileAberto {
+        display: flex !important;
+        flex-direction: column;
+        width: 91%;
+        padding: 35px 0;
+        gap: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: #000; /* FUNDO SÓLIDO */
+        border-top: 2px solid #5c00ff;
+
+        z-index: 25;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Logo reposicionada sem atrapalhar nada */
+    .logoDireita {
+        width: 55px !important;
+        position: absolute;
+        right: 20px;
+        top: 16px;
+        z-index: 26;
     }
 }
