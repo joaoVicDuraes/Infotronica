@@ -2,41 +2,86 @@
 
 > **Inovação & Tecnologia desde 1997**
 
-Bem-vindo ao repositório do site oficial da **Infotrônica**. Este projeto é uma Single Page Application (SPA) desenvolvida em React, focada na apresentação institucional e catálogo de computadores e periféricos.
+Projeto de uma Single Page Application (SPA) em React, focado na apresentação institucional e catálogo de computadores e periféricos da **Infotrônica**.
 
 ## 📋 Sobre o Projeto
 
-O site serve como a vitrine digital da Infotrônica, combinando uma Landing Page moderna com seções de E-commerce. O projeto utiliza uma identidade visual "Tech/Gamer" com fundo escuro (Azul/Roxo) e destaques em Amarelo.
-
-## 🚀 Funcionalidades
-
-- **Navegação Híbrida:** - Menu inteligente que utiliza âncoras (`#`) na página inicial.
-  - Rotas dedicadas (React Router) para páginas internas.
-- **Catálogo de Produtos:**
-  - Página exclusiva para **Computadores** (Gamer, Workstation).
-  - Página exclusiva para **Periféricos**.
-- **Design Responsivo:** Header com menu hambúrguer móvel e versão desktop.
-- **Identidade Visual Personalizada:** Tema escuro com efeitos de "glow" e gradientes.
+- **Navegação Híbrida** com âncoras na página inicial e rotas dedicadas para páginas internas.
+- **Catálogo de Produtos** com seções para **Computadores** e **Periféricos**.
+- **Design Responsivo** e identidade visual com tema escuro e efeitos "glow".
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **[React](https://reactjs.org/)**: Biblioteca principal.
-- **[React Router DOM](https://reactrouter.com/)**: Gerenciamento de rotas e navegação.
-- **CSS Modules**: Estilização modularizada.
-- **Vite**: Build tool e ambiente de desenvolvimento.
+- **React**
+- **React Router** ou **Wouter** (gerenciamento de rotas)
+- **CSS Modules**
+- **Vite**
 
-## 📂 Estrutura de Pastas
+---
 
-```text
-src/
-├── assets/             # Imagens e Logos
-├── components/
-│   ├── common/         # Botões, Títulos, Cards genéricos
-│   └── layout/         # Header e Footer
-├── sections/           # Seções da Home e Páginas de Loja
-│   ├── Computadores/   # Inclui ComputadoresPage.jsx
-│   ├── Perifericos/    # Inclui PerifericosPage.jsx
-│   ├── SobreNos/
-│   └── ...
-├── App.jsx             # Configuração de Rotas
-└── main.jsx            # Ponto de entrada
+## 📥 Como Instalar
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/infotronica.git
+Instale as dependências:
+
+Com npm:
+
+bash
+
+npm install
+Com yarn:
+
+bash
+
+yarn install
+Inicie o servidor:
+
+Com npm:
+
+bash
+
+npm start
+Com yarn:
+
+bash
+
+yarn start
+Acesse o projeto em http://localhost:3000.
+
+🛣️ Usando o Wouter
+Se preferir usar Wouter para roteamento:
+
+1. Instalar Wouter
+bash
+
+npm install wouter
+2. Exemplo de Implementação
+src/App.js:
+javascript
+
+import { Route, Link, Switch } from 'wouter';
+import Home from './pages/Home';
+import Computers from './pages/Computers';
+import Peripherals from './pages/Peripherals';
+
+function App() {
+  return (
+    <div>
+      <nav>
+        <Link href="/">Home</Link>
+        <Link href="/computers">Computadores</Link>
+        <Link href="/peripherals">Periféricos</Link>
+      </nav>
+
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/computers" component={Computers} />
+        <Route path="/peripherals" component={Peripherals} />
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
