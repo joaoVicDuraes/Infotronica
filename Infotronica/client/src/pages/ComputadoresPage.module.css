@@ -1,0 +1,133 @@
+.lojaContainer {
+  background-color: #0F0C29; 
+  background: linear-gradient(to bottom, #0F0C29, #302b63);
+  min-height: 100vh;
+  padding: 120px 20px 40px 20px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.lojaTitulo {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.destaque {
+  color: #FFD700; 
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.gridProdutos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardProduto {
+  background-color: #1A1A40;
+  border: 2px solid #6A0DAD;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardProduto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(106, 13, 173, 0.6);
+}
+
+.imgWrapper img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.specsLista {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  color: #ccc;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
+.specsLista li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #302b63;
+  padding-bottom: 2px;
+}
+
+.preco {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.precoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnComprar {
+  width: 100%;
+  padding: 10px;
+  background-color: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btnComprar:hover {
+  background-color: #FFD700; 
+  color: #0F0C29; 
+}
+
+.botaoVoltar {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #6A0DAD;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botaoVoltar:hover {
+  background-color: #FFD700;
+  color: #0F0C29;
+}
+
+@media (max-width: 768px) {
+  .lojaTitulo {
+    font-size: 1.8rem;
+  }
+
+  .lojaContainer {
+    padding: 100px 15px 30px 15px;
+  }
+
+  .cardProduto {
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardProduto {
+    width: 100%;
+    max-width: 300px;
+  }
+}
