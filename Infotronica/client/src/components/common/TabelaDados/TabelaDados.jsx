@@ -1,11 +1,6 @@
 import styles from './TabelaDados.module.css';
 
-interface TabelaDadosProps {
-    dados: any[];
-    colunas: { chave: string; titulo: string; formatar?: (valor: any) => string }[];
-}
-
-export default function TabelaDados({ dados, colunas }: TabelaDadosProps) {
+export default function TabelaDados({ dados, colunas }) {
     if (!dados || dados.length === 0) {
         return <div className={styles.semDados}>Nenhum dado disponível.</div>;
     }

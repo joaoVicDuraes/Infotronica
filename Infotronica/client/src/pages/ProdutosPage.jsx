@@ -14,7 +14,7 @@ export default function ProdutosPage() {
     { chave: 'nome', titulo: 'Nome' },
     { chave: 'categoria', titulo: 'Categoria' },
     { chave: 'descricao', titulo: 'Descrição' },
-    { chave: 'preco', titulo: 'Preço', formatar: (v: number) => `R$ ${v.toFixed(2)}` },
+    { chave: 'preco', titulo: 'Preço', formatar: (v) => `R$ ${v.toFixed(2)}` },
     { chave: 'estoque', titulo: 'Estoque' }
   ];
 

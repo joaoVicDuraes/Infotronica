@@ -12,10 +12,10 @@ export default function PedidosPage() {
   const colunasPedidos = [
     { chave: 'id', titulo: 'ID' },
     { chave: 'cliente_id', titulo: 'ID Cliente' },
-    { chave: 'data', titulo: 'Data', formatar: (v: string) => new Date(v).toLocaleDateString('pt-BR') },
-    { chave: 'total', titulo: 'Total', formatar: (v: number) => `R$ ${v.toFixed(2)}` },
+    { chave: 'data', titulo: 'Data', formatar: (v) => new Date(v).toLocaleDateString('pt-BR') },
+    { chave: 'total', titulo: 'Total', formatar: (v) => `R$ ${v.toFixed(2)}` },
     { chave: 'status', titulo: 'Status' },
-    { chave: 'produtos', titulo: 'Itens', formatar: (v: any[]) => `${v.length} itens` }
+    { chave: 'produtos', titulo: 'Itens', formatar: (v) => `${v.length} itens` }
   ];
 
   const colunasClientes = [
@@ -23,7 +23,7 @@ export default function PedidosPage() {
     { chave: 'nome', titulo: 'Nome' },
     { chave: 'email', titulo: 'E-mail' },
     { chave: 'telefone', titulo: 'Telefone' },
-    { chave: 'endereco', titulo: 'Endereço', formatar: (v: any) => `${v.rua}, ${v.numero} - ${v.cidade}/${v.estado}` }
+    { chave: 'endereco', titulo: 'Endereço', formatar: (v) => `${v.rua}, ${v.numero} - ${v.cidade}/${v.estado}` }
   ];
 
   return (

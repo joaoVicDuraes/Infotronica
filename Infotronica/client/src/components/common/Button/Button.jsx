@@ -1,12 +1,6 @@
 import styles from './Button.module.css'
 
-interface ButtonProps {
-    texto: string;
-    href?: string;
-    onClick?: () => void;
-}
-
-export default function Button( props: ButtonProps ) {
+export default function Button(props) {
     const content = (
         <>
             <svg width="180px" height="60px" viewBox="0 0 180 60" className={styles.border}>

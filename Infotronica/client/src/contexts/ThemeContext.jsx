@@ -1,30 +1,20 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "light" | "dark";
+// Interfaces e Types removidos
 
-interface ThemeContextType {
-  theme: Theme;
-  toggleTheme?: () => void;
-  switchable: boolean;
-}
+const ThemeContext = createContext(undefined);
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-
-interface ThemeProviderProps {
-  children: React.ReactNode;
-  defaultTheme?: Theme;
-  switchable?: boolean;
-}
-
+// Tipagem dos props removida
 export function ThemeProvider({
   children,
   defaultTheme = "light",
   switchable = false,
-}: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(() => {
+}) {
+  const [theme, setTheme] = useState(() => {
     if (switchable) {
       const stored = localStorage.getItem("theme");
-      return (stored as Theme) || defaultTheme;
+      // "as Theme" removido
+      return stored || defaultTheme;
     }
     return defaultTheme;
   });
