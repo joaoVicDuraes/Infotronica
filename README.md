@@ -23,8 +23,8 @@ O projeto foi construído utilizando as seguintes ferramentas e bibliotecas:
 
 - ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) **React**
 - ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) **Vite**
-- **Gerenciamento de Rotas:** React Router ou Wouter
-- **Estilização:** CSS Modules
+- **Wouter** (gerenciamento de rotas leve)
+- **CSS Modules** (estilização)
 
 ---
 
@@ -35,13 +35,13 @@ Siga os passos abaixo para rodar o projeto em sua máquina local.
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/infotronica.git
+git clone [https://github.com/seu-usuario/infotronica.git](https://github.com/seu-usuario/infotronica.git)
 cd infotronica
 ```
 
 ### 2. Instale as dependências
 
-Você pode usar **npm** ou **yarn**:
+Certifique-se de instalar todas as dependências, incluindo o Wouter:
 
 **Usando npm:**
 ```bash
@@ -69,14 +69,37 @@ yarn start
 
 ---
 
-## 🛣️ Configuração Opcional: Usando Wouter
+## 🛣️ Estrutura de Rotas
 
-Caso prefira utilizar o **Wouter** como solução de roteamento (mais leve que o React Router), siga as instruções abaixo:
+O projeto utiliza o **Wouter** para gerenciamento de rotas devido à sua leveza e simplicidade. Abaixo está a estrutura principal configurada no `App.jsx`:
 
-### 1. Instalação
+```jsx
+import { Route, Link, Switch } from 'wouter';
+import Home from './pages/Home';
+import Computers from './pages/Computers';
+import Peripherals from './pages/Peripherals';
 
-```bash
-npm install wouter
+function App() {
+  return (
+    <div>
+      {/* Barra de Navegação */}
+      <nav>
+        <Link href="/">Home</Link>
+        <Link href="/computers">Computadores</Link>
+        <Link href="/peripherals">Periféricos</Link>
+      </nav>
+
+      {/* Definição das Rotas */}
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/computers" component={Computers} />
+        <Route path="/peripherals" component={Peripherals} />
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ---
